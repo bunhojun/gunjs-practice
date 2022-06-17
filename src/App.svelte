@@ -34,7 +34,7 @@
   {:else }
     <div>
       <label for="email">email</label>
-      <input id="email" bind:value={email} minlength="3" maxlength="16" />
+      <input id="email" bind:value={email} minlength="3" />
       <label for="password">password</label>
       <input id="password" type="password" bind:value={password} />
     </div>
