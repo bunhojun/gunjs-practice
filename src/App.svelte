@@ -3,7 +3,6 @@
 
   let email;
   let password;
-  let usernameValue;
 
   function login() {
     user.auth(email, password, ({ err }) => err && alert(err));
@@ -24,16 +23,12 @@
     username.set('');
   }
 
-  username.subscribe(value => {
-		usernameValue = value;
-	});
-
 </script>
 
 <main>
   {#if $username}
     <div>
-      <p>logged in as {usernameValue}</p>
+      <p>logged in as {$username}</p>
       <button on:click={logout}>logout</button>
     </div>
   {:else }
