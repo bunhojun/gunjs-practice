@@ -28,7 +28,7 @@
 <main>
   {#if $username}
     <div>
-      <p>logged in</p>
+      <p>logged in as {$username}</p>
       <button on:click={logout}>logout</button>
     </div>
   {:else }
