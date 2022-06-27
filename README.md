@@ -1,3 +1,6 @@
+## URL
+https://gunjs-practice-six.vercel.app/
+
 ## for developers
 run these lines of code in the root directory
 
